@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="okio">
+<class abstract="false" deprecated="not deprecated" extends="okio.Timeout" extends-generic-aware="okio.Timeout" final="false" name="AsyncTimeout" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AsyncTimeout" static="false" type="okio.AsyncTimeout" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="enter" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="exit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newTimeoutException" native="false" return="java.io.IOException" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.io.IOException">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sink" native="false" return="okio.Sink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="source" native="false" return="okio.Source" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timedOut" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AsyncTimeout.1" static="false" visibility="">
+<implements name="okio.Sink" name-generic-aware="okio.Sink">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AsyncTimeout.2" static="false" visibility="">
+<implements name="okio.Source" name-generic-aware="okio.Source">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="true" name="AsyncTimeout.Watchdog" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="AsyncTimeout.Watchdog" static="false" type="okio.AsyncTimeout.Watchdog" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Base64" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="decode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodeUrl" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Buffer" static="false" visibility="public">
+<implements name="java.lang.Cloneable" name-generic-aware="java.lang.Cloneable">
+</implements>
+<implements name="okio.BufferedSink" name-generic-aware="okio.BufferedSink">
+</implements>
+<implements name="okio.BufferedSource" name-generic-aware="okio.BufferedSource">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Buffer" static="false" type="okio.Buffer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="buffer" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="completeSegmentByteCount" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="copyTo" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="copyTo" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.OutputStream">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="copyTo" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="emit" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="emitCompleteSegments" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="exhausted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByte" native="false" return="byte" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOfElement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOfElement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="outputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readAll" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByte" native="false" return="byte" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteString" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteString" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readDecimalLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFrom" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFrom" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFully" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFully" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readHexadecimalUnsignedLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readIntLe" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLongLe" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readShort" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readShortLe" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.nio.charset.Charset">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.nio.charset.Charset">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8CodePoint" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8Line" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8LineStrict" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="request" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="require" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="size" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="skip" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="EOFException" type="java.io.EOFException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="snapshot" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="snapshot" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeAll" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeByte" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeDecimalLong" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeHexadecimalUnsignedLong" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeInt" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeIntLe" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLong" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLongLe" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeShort" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeShortLe" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeString" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="java.nio.charset.Charset">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeString" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.nio.charset.Charset">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.OutputStream">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeUtf8" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeUtf8" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeUtf8CodePoint" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.OutputStream" extends-generic-aware="java.io.OutputStream" final="false" name="Buffer.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" extends-generic-aware="java.io.InputStream" final="false" name="Buffer.2" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BufferedSink" static="false" visibility="public">
+<implements name="okio.Sink" name-generic-aware="okio.Sink">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="buffer" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="emit" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="emitCompleteSegments" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="outputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeAll" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeByte" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeDecimalLong" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeHexadecimalUnsignedLong" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeInt" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeIntLe" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeLong" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeLongLe" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeShort" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeShortLe" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeString" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeString" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeUtf8" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeUtf8" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeUtf8CodePoint" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BufferedSource" static="false" visibility="public">
+<implements name="okio.Source" name-generic-aware="okio.Source">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="buffer" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="exhausted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="indexOfElement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="indexOfElement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="inputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readAll" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readByte" native="false" return="byte" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readByteString" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readByteString" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readDecimalLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readFully" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readFully" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readHexadecimalUnsignedLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readIntLe" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readLongLe" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readShort" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readShortLe" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readUtf8" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readUtf8" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readUtf8CodePoint" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readUtf8Line" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readUtf8LineStrict" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="request" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="require" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="skip" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ByteString" static="false" visibility="public">
+<implements name="java.io.Serializable" name-generic-aware="java.io.Serializable">
+</implements>
+<implements name="java.lang.Comparable" name-generic-aware="java.lang.Comparable&lt;okio.ByteString&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="base64" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="base64Url" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decodeBase64" native="false" return="okio.ByteString" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decodeHex" native="false" return="okio.ByteString" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodeUtf8" native="false" return="okio.ByteString" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByte" native="false" return="byte" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hex" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="md5" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="of" native="false" return="okio.ByteString" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="of" native="false" return="okio.ByteString" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rangeEquals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rangeEquals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="okio.ByteString">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="okio.ByteString" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sha256" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="substring" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="substring" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toAsciiLowercase" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toAsciiUppercase" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="utf8" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="EMPTY" static="true" transient="false" type="okio.ByteString" type-generic-aware="okio.ByteString" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="DeflaterSink" static="false" visibility="public">
+<implements name="okio.Sink" name-generic-aware="okio.Sink">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DeflaterSink" static="false" type="okio.DeflaterSink" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+<parameter name="p1" type="java.util.zip.Deflater">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ForwardingSink" static="false" visibility="public">
+<implements name="okio.Sink" name-generic-aware="okio.Sink">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ForwardingSink" static="false" type="okio.ForwardingSink" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="delegate" native="false" return="okio.Sink" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ForwardingSource" static="false" visibility="public">
+<implements name="okio.Source" name-generic-aware="okio.Source">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ForwardingSource" static="false" type="okio.ForwardingSource" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="delegate" native="false" return="okio.Source" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="okio.Timeout" extends-generic-aware="okio.Timeout" final="false" name="ForwardingTimeout" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ForwardingTimeout" static="false" type="okio.ForwardingTimeout" visibility="public">
+<parameter name="p0" type="okio.Timeout">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="delegate" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setDelegate" native="false" return="okio.ForwardingTimeout" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Timeout">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="GzipSink" static="false" visibility="public">
+<implements name="okio.Sink" name-generic-aware="okio.Sink">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="GzipSink" static="false" type="okio.GzipSink" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="GzipSource" static="false" visibility="public">
+<implements name="okio.Source" name-generic-aware="okio.Source">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="GzipSource" static="false" type="okio.GzipSource" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="InflaterSource" static="false" visibility="public">
+<implements name="okio.Source" name-generic-aware="okio.Source">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="InflaterSource" static="false" type="okio.InflaterSource" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<parameter name="p1" type="java.util.zip.Inflater">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="refill" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Okio" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="appendingSink" native="false" return="okio.Sink" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+<exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buffer" native="false" return="okio.BufferedSink" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buffer" native="false" return="okio.BufferedSource" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sink" native="false" return="okio.Sink" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+<exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sink" native="false" return="okio.Sink" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.OutputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sink" native="false" return="okio.Sink" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.net.Socket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sink" native="false" return="okio.Sink" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.nio.file.Path">
+</parameter>
+<parameter name="p1" type="java.nio.file.OpenOption...">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="source" native="false" return="okio.Source" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+<exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="source" native="false" return="okio.Source" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="source" native="false" return="okio.Source" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.net.Socket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="source" native="false" return="okio.Source" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.nio.file.Path">
+</parameter>
+<parameter name="p1" type="java.nio.file.OpenOption...">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Okio.1" static="true" visibility="">
+<implements name="okio.Sink" name-generic-aware="okio.Sink">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Okio.2" static="true" visibility="">
+<implements name="okio.Source" name-generic-aware="okio.Source">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="okio.AsyncTimeout" extends-generic-aware="okio.AsyncTimeout" final="false" name="Okio.3" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="RealBufferedSink" static="false" visibility="">
+<implements name="okio.BufferedSink" name-generic-aware="okio.BufferedSink">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RealBufferedSink" static="false" type="okio.RealBufferedSink" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+<parameter name="p1" type="okio.Buffer">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RealBufferedSink" static="false" type="okio.RealBufferedSink" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="buffer" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="emit" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="emitCompleteSegments" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="outputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeAll" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeByte" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeDecimalLong" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeHexadecimalUnsignedLong" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeInt" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeIntLe" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLong" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLongLe" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeShort" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeShortLe" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeString" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeString" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeUtf8" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeUtf8" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeUtf8CodePoint" native="false" return="okio.BufferedSink" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="buffer" static="false" transient="false" type="okio.Buffer" type-generic-aware="okio.Buffer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="sink" static="false" transient="false" type="okio.Sink" type-generic-aware="okio.Sink" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.OutputStream" extends-generic-aware="java.io.OutputStream" final="false" name="RealBufferedSink.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="RealBufferedSource" static="false" visibility="">
+<implements name="okio.BufferedSource" name-generic-aware="okio.BufferedSource">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RealBufferedSource" static="false" type="okio.RealBufferedSource" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+<parameter name="p1" type="okio.Buffer">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RealBufferedSource" static="false" type="okio.RealBufferedSource" visibility="public">
+<parameter name="p0" type="okio.Source">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="buffer" native="false" return="okio.Buffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="exhausted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOfElement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOfElement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.ByteString">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readAll" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Sink">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByte" native="false" return="byte" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteString" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readByteString" native="false" return="okio.ByteString" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readDecimalLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFully" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFully" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readHexadecimalUnsignedLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readIntLe" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLongLe" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readShort" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readShortLe" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.nio.charset.Charset">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8CodePoint" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8Line" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readUtf8LineStrict" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="request" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="require" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="skip" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="buffer" static="false" transient="false" type="okio.Buffer" type-generic-aware="okio.Buffer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="source" static="false" transient="false" type="okio.Source" type-generic-aware="okio.Source" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" extends-generic-aware="java.io.InputStream" final="false" name="RealBufferedSource.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Segment" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="compact" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="SegmentPool" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="okio.ByteString" extends-generic-aware="okio.ByteString" final="true" name="SegmentedByteString" static="false" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Sink" static="false" visibility="public">
+<implements name="java.io.Closeable" name-generic-aware="java.io.Closeable">
+</implements>
+<implements name="java.io.Flushable" name-generic-aware="java.io.Flushable">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Source" static="false" visibility="public">
+<implements name="java.io.Closeable" name-generic-aware="java.io.Closeable">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="okio.Buffer">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Timeout" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Timeout" static="false" type="okio.Timeout" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearDeadline" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearTimeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="deadline" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deadlineNanoTime" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deadlineNanoTime" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasDeadline" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="throwIfReached" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeout" native="false" return="okio.Timeout" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="timeoutNanos" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="NONE" static="true" transient="false" type="okio.Timeout" type-generic-aware="okio.Timeout" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="okio.Timeout" extends-generic-aware="okio.Timeout" final="false" name="Timeout.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Util" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="arrayRangeEquals" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="byte[]">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkOffsetAndCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reverseBytesInt" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reverseBytesLong" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reverseBytesShort" native="false" return="short" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sneakyRethrow" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Throwable">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="UTF_8" static="true" transient="false" type="java.nio.charset.Charset" type-generic-aware="java.nio.charset.Charset" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>

@@ -1,0 +1,6 @@
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/OkHttpOkioBinding/obj/Debug/MonoAndroid,Version=v5.0.AssemblyAttribute.cs
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/OkHttpOkioBinding/obj/Debug/OkHttpOkioBinding.Jars.okio-1.6.0.jar
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/OkHttpOkioBinding/bin/Debug/OkHttpOkioBinding.dll.mdb
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/OkHttpOkioBinding/bin/Debug/OkHttpOkioBinding.dll
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/OkHttpOkioBinding/obj/Debug/OkHttpOkioBinding.dll
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/OkHttpOkioBinding/obj/Debug/OkHttpOkioBinding.dll.mdb
